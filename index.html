@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--Input Box-->
+        <h1 class="center" align="center">Todo List</h1>
+        <div class="row mt-5">
+            <div class="col-12">
+                <label for="inpNewTask">New Task</label>
+                <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp" placeholder="Enter the task">
+                <small id="newTaskHelp" class="form-text text-muted">A short one-line description for your task</small>
+            </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="row mt-4">
+            <button disabled class="btn btn-success col-md-12 my-2 mx-3 col-sm-11" id="btnAdd">
+                <i class="fas fa-plus-square"></i> Add 
+            </button>
+        </div>
+        <div class="row">
+            <button disabled class="btn btn-primary col-md-3 my-2 mx-3 col-sm-5" id="btnSort">
+                <i class="fas fa-sort-amount-down"></i> Sort
+            </button>
+            <button disabled class="btn btn-warning col-md-3 my-2 mx-3 col-sm-5" id="btnReset">
+                <i class="fas fa-backspace"></i> Reset
+            </button>
+            <button disabled class="btn btn-danger col-md-3 my-2 mx-3 col-sm-11" id="btnClear">
+                <i class="fas fa-trash-alt"></i> Clear 
+            </button>
+        </div>
+        
+
+        <!--Task List-->
+        <h4 class="mt-5">Your Tasks:</h3>
+        <ul class="list-group mt-1 list-color" id="ulTasks">
+            
+        </ul>
+    </div>
+</body>
+</html>

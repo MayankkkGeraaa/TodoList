@@ -1,0 +1,17 @@
+#ulTasks> li.done{
+    color:#6c757d;
+    text-decoration: line-through;
+}
+
+body{
+    background-color: #FFF8E3;
+}
+
+h1{
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 4rem;
+}
+
+.list-group-item{
+    background-color: #F5EEE6;
+}
