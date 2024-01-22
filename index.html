@@ -20,30 +20,32 @@
         <!--Input Box-->
         <h1 class="center" align="center">Todo List</h1>
         <div class="row mt-5">
-            <div class="col-12">
+            <div class="col-md-8 col-xs-12">
                 <label for="inpNewTask">New Task</label>
                 <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp" placeholder="Enter the task">
                 <small id="newTaskHelp" class="form-text text-muted">A short one-line description for your task</small>
             </div>
+            <div class="col-md-4 col-xs-12 row">
+                <div class="col-md-12 row">
+                    <button disabled class="btn btn-success col-xl-6 col-md-6  col-xs-12" id="btnAdd">
+                        <i class="fas fa-plus-square"></i> Add 
+                    </button>
+                    <button disabled class="btn btn-primary col-xl-6 col-md-6  col-xs-12" id="btnSort">
+                        <i class="fas fa-sort-amount-down"></i> Sort
+                    </button>
+                </div>
+                <div class="col-md-12 col-xs-12 row">
+                    <button disabled class="btn btn-warning col-xl-6 col-md-6  col-xs-12" id="btnReset">
+                        <i class="fas fa-backspace"></i> Reset
+                    </button>
+                    <button disabled class="btn btn-danger col-xl-6 col-md-6  col-xs-12" id="btnClear">
+                        <i class="fas fa-trash-alt"></i> Clear 
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!--Buttons-->
-        <div class="row mt-4">
-            <button disabled class="btn btn-success col-md-12 my-2 mx-3 col-sm-11" id="btnAdd">
-                <i class="fas fa-plus-square"></i> Add 
-            </button>
-        </div>
-        <div class="row">
-            <button disabled class="btn btn-primary col-md-3 my-2 mx-3 col-sm-5" id="btnSort">
-                <i class="fas fa-sort-amount-down"></i> Sort
-            </button>
-            <button disabled class="btn btn-warning col-md-3 my-2 mx-3 col-sm-5" id="btnReset">
-                <i class="fas fa-backspace"></i> Reset
-            </button>
-            <button disabled class="btn btn-danger col-md-3 my-2 mx-3 col-sm-11" id="btnClear">
-                <i class="fas fa-trash-alt"></i> Clear 
-            </button>
-        </div>
+        
         
 
         <!--Task List-->
